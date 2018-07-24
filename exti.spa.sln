@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exti.API", "Exti.API\Exti.API.csproj", "{F96A50DF-B35C-4295-B9B0-41E9568B6455}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A90A027D-23D0-490A-8A8D-70C7CBB15F8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exti-SPA", "Exti-SPA", "{1B35318F-0651-48A1-B1B1-BC8DF0C9B824}"
+	ProjectSection(SolutionItems) = preProject
+		Exti-SPA\Dockerfile = Exti-SPA\Dockerfile
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F96A50DF-B35C-4295-B9B0-41E9568B6455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F96A50DF-B35C-4295-B9B0-41E9568B6455}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F96A50DF-B35C-4295-B9B0-41E9568B6455}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F96A50DF-B35C-4295-B9B0-41E9568B6455}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A90A027D-23D0-490A-8A8D-70C7CBB15F8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A90A027D-23D0-490A-8A8D-70C7CBB15F8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A90A027D-23D0-490A-8A8D-70C7CBB15F8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A90A027D-23D0-490A-8A8D-70C7CBB15F8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6C174E7-65ED-4BF4-A065-CA6E464DC170}
+	EndGlobalSection
+EndGlobal
