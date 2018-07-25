@@ -1,6 +1,17 @@
 version: '3.4'
 
 services:
+  exti.spa:
+    image: ${DOCKER_REGISTRY}extispa
+    build:
+      target: debug
+      context: .
+      dockerfile: Exti-SPA/Dockerfile
+    volumes:
+      - ./Exti-SPA:/app
+    ports:
+      - "4200"
+
   exti.api:
     image: ${DOCKER_REGISTRY}extiapi
     build:
