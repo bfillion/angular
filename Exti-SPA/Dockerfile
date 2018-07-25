@@ -14,7 +14,7 @@ RUN npm install -g @angular/cli
 
 USER node
 
-FROM base AS debug
+FROM base AS developpement
 WORKDIR /app
 CMD ng serve --host 0.0.0.0
 

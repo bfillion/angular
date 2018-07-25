@@ -3,7 +3,7 @@ version: '3.4'
 services:
   exti.spa:
     build:
-      target: debug
+      target: developpement
     volumes:
       - ./Exti-SPA:/app
     ports:
