@@ -5,16 +5,20 @@ import { AppComponent } from './app.component';
 import { UiModule } from './ui/ui.module';
 import { AProposComponent } from './apropos/apropos.component';
 import { ContactComponent } from './contact/contact.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { AccueilComponent } from './accueil/accueil.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AProposComponent,
-    ContactComponent
+    ContactComponent,
+    AccueilComponent
   ],
   imports: [
     BrowserModule,
-    UiModule
+    UiModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
