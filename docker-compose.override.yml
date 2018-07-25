@@ -1,6 +1,14 @@
 version: '3.4'
 
 services:
+  exti.spa:
+    build:
+      target: debug
+    volumes:
+      - ./Exti-SPA:/app
+    ports:
+      - "4200:4200"
+
   exti.api:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
