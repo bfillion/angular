@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exti-SPA", "Exti-SPA", "{1B35318F-0651-48A1-B1B1-BC8DF0C9B824}"
 	ProjectSection(SolutionItems) = preProject
 		Exti-SPA\Dockerfile = Exti-SPA\Dockerfile
+		Exti-SPA\nginx-exti-spa.conf = Exti-SPA\nginx-exti-spa.conf
 	EndProjectSection
 EndProject
 Global
