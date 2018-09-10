@@ -1,0 +1,6 @@
+{   
+    "/api": {
+    "target": "http://exti.api",
+    "secure": false
+   } 
+}

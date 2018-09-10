@@ -36,6 +36,8 @@ namespace Exti.API
             }
 
             app.UseMvc();
+
+            //app.UsePathBase("/api");
         }
     }
 }

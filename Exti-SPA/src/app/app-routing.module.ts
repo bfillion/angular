@@ -6,7 +6,7 @@ import { AProposComponent }      from './apropos/apropos.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'accueil',
     component: AccueilComponent
   },{
     path: 'contact',
@@ -15,6 +15,16 @@ const routes: Routes = [
   {
     path: 'apropos',
     component: AProposComponent
+  },
+  {
+      path: '',
+      redirectTo: '/accueil',
+      pathMatch: 'full'
+  },
+  {
+      path: '**',
+      redirectTo: '/accueil',
+      pathMatch: 'full'
   }
 ];
 
