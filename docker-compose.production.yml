@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  exti.spa:
+    build:
+      target: prod
+      args:
+        repertoire: ./Exti-SPA/
+    volumes:
+      - ./Exti-SPA:/app
+    ports:
+      - "8080:80"
+
+  exti.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"

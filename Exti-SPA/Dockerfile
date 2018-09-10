@@ -27,14 +27,15 @@ FROM base AS construction
 RUN mkdir -p /app
 WORKDIR /app
 
-COPY package.json /app
+ARG repertoire
+COPY ${repertoire}package.json /app
 RUN npm install
-COPY . /app
+COPY ${repertoire} /app
 
 RUN npm run build
 
 #Étape prod
 FROM nginx:1.13.7-alpine AS prod
+ARG repertoire
 COPY --from=construction /app/dist/Exti-SPA /usr/share/nginx/html
-
-COPY ./nginx-exti-spa.conf /etc/nginx/conf.d/default.conf
+COPY ${repertoire}nginx-exti-spa.conf /etc/nginx/conf.d/default.conf
