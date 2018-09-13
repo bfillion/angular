@@ -20,6 +20,7 @@ EXPOSE 4200
 
 USER node
 WORKDIR /app
+RUN npm install
 CMD ng serve --host 0.0.0.0 --proxy-config proxy.conf.json
 
 #Étape construction
